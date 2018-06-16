@@ -8,11 +8,21 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Campsite React Shuns</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div class="content">
+          <h2>What did you think of our campsite? Let us know...</h2>
+          <h3>Recent Reviews</h3>
+          <ul>
+            <li>That Campsite Rocked!!</li>
+            <li>I loved it and want s'more!!</li>
+            <li>
+              I was there in April and it rained. Why can't you prevent that?
+            </li>
+            <li>Bacon!! Everyone loves bacon! (well, almost everyone)</li>
+          </ul>
+          <a href="#">Add Your Review</a>
+        </div>
       </div>
     );
   }
