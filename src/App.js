@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Campsite React Shuns</h1>
         </header>
-        <div class="content">
+        <div className="content">
           <h2>What did you think of our campsite? Let us know...</h2>
           <h3>Recent Reviews</h3>
           <ul>
@@ -21,7 +21,7 @@ class App extends Component {
             </li>
             <li>Bacon!! Everyone loves bacon! (well, almost everyone)</li>
           </ul>
-          <a href="#">Add Your Review</a>
+          <button>Add Your Review</button>
         </div>
       </div>
     );
