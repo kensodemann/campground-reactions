@@ -3,6 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scale: 'F',
+      temperature: 301
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -11,6 +19,18 @@ class App extends Component {
           <h1 className="App-title">Campsite React Shuns</h1>
         </header>
         <div className="content">
+          <div className="temperature">
+            <kws-temperature
+              temperature={this.state.temperature}
+              scale={this.state.scale}
+              onClick={() =>
+                this.setState({
+                  scale: this.state.scale === 'C' ? 'F' : 'C',
+                  temperature: this.state.temperature
+                })
+              }
+            />
+          </div>
           <h2>What did you think of our campsite? Let us know...</h2>
           <h3>Recent Reviews</h3>
           <ul>
