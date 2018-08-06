@@ -1,3 +1,7 @@
+kws-temperature {
+  font-size: 36px;
+  cursor: pointer;
+}
 .temperature {
   text-align: center;
 }
